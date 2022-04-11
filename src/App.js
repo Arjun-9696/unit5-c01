@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import './App.css';
 export default function App() {
   const [counter, setCounter] = React.useState(73);
-  
+
   const scoreIncrement = (value) => {
     setCounter(counter + value);
   };
@@ -12,7 +12,7 @@ export default function App() {
   };
   const [ball, setBall] = React.useState(50);
   const ballIncrement = (value) => {
-    setBall(Math.round(ball + value* 10) / 10);
+    setBall(Math.round(ball + value * 10) / 10);
   };
 
   return (
@@ -24,7 +24,7 @@ export default function App() {
           <h1 className="scoreCount">{counter}</h1>
         </div>
         <div>
-          Wicket:{'2'}
+          Wicket:{''}
           <h1 className="wicketCount">
             {
               // show wicket here
@@ -34,7 +34,7 @@ export default function App() {
         </div>
 
         <div>
-          Over:{'50'}
+          Over:{''}
           <h1 className="overCount">
             {
               // Show Over here in the format: "over.ball" eg: 4.5 means 4th over and 5th ball
@@ -76,5 +76,3 @@ export default function App() {
     </div>
   );
 }
-
-
