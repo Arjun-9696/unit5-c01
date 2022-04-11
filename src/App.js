@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 export default function App() {
-  const [counter, setCounter] = React.useState(73);
+  const [counter, setCounter] = React.useState(76);
 
   const scoreIncrement = (value) => {
     setCounter(counter + value);
